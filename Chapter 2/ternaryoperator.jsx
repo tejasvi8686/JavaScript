@@ -1,12 +1,12 @@
 // ternary operator (? :)
 
-let age = 10;
+let age = 19;
 
-if(age > 18){
-    console.log("qulify");
-}else {
-    console.log("fail");
-}
+// if(age > 18){
+//     console.log("qulify");
+// }else {
+//     console.log("fail");
+// }
 
 // single line solution
 
