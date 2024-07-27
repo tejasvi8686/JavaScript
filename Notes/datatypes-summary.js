@@ -49,3 +49,31 @@ console.log(typeof id);
 // Object (host and does not implement [[Call]])	Implementation-defined except may not be "undefined", "boolean", "number", or "string".
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// *********************************************************************************
+
+// stack (primitive), Heap (Non-primitive) 
+
+//primitive ka ek copy milta hai (call by value)
+//Non- Primitive  change the original valuce this is called by refrence
+
+
+let myYoutubename = "tejasviraj"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email : 'user@google.com',
+    upi : 'user@ybl',
+}
+
+let userTwo = userOne
+
+userTwo.email = "tejasviraj8686@gmail.com"
+
+console.log(userOne);
+console.log(userTwo.email);
