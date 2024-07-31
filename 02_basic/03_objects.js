@@ -1,4 +1,7 @@
 // object literals 
+// object.create
+// singleton
+
 
 const JsUser = {
     name : 'Tejasvi',
