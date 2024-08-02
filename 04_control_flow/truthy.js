@@ -12,18 +12,42 @@ if (userEmail) {
 // truthy value
 // "0" 'false', ' ', [] , {}, function () {}
 
-if (userEmail.length === 0) {
-    console.log("Array is empty");
-}
+// if (userEmail.length === 0) {
+//     console.log("Array is empty");
+// }
 
-const emptyObj = {};
+// const emptyObj = {};
 
-if (Object.keys(emptyObj).length === 0) {
-  console.log("Object is empty");
-}
+// if (Object.keys(emptyObj).length === 0) {
+//   console.log("Object is empty");
+// }
 
 
-const a = 0;
-const b = ""
+// const a = 0;
+// const b = ""
 
-console.log( a == b);
+// console.log( a == b);
+
+// Nullish coalescoing operator (??): null undefined
+
+let val1 ;
+
+// val1 = 5 ??  10
+// val1 = null ?? 10
+// var1 = undefined ?? 15 
+val1 = null ?? 20 ?? 100
+
+
+
+console.log(val1);
+
+// ternimary operator
+
+//condition ? true : false
+
+const iceTeaPrice = 100
+
+iceTeaPrice <= 80 ? console.log("less than 80 ") : console.log("more than 80");
+
+
+
