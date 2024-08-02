@@ -45,7 +45,7 @@ if (userLoggedIn && debitCard && 2 == 3) {
   console.log("Allow to buy course");
 }
 
-// when OR 
+// when OR statment came it's check only one statmet true it will run
 
 if (loggedInFromEmail || loggedInFromGoogle) {
     console.log("User Loged IN");
