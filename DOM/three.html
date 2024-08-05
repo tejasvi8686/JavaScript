@@ -9,15 +9,26 @@
 
 <body style="background-color: #212121; color: antiquewhite;">
 
-    
+
 
 
 </body>
 
 <script>
-   const  div = document.createElement('div');
-   console.log(div);
-    div.id = Math.round(Math.random() * 10 + 1)
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = 'main'
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "genrated title");
+    div.style.backgroundColor = "grren"
+    div.style.padding = "12px"
+    // div.innerText = "chai aur code"
+    const addText = document.createTextNode("Chai aur code");
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+
+
 </script>
 
 </html>
