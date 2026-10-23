@@ -82,7 +82,6 @@ function evensBackward(n) {
   let start = n;
 
   if (n % 2 === 1) {
-
     start = n - 1;
   }
 
@@ -103,9 +102,8 @@ check("4. evensBackward", evensBackward(9), [8, 6, 4, 2]);
 // Hint: no loop needed. Last index = str.length - 1
 function lastChar(str) {
   // Write your code here
- 
-  return str[str.length-1]
 
+  return str[str.length - 1];
 }
 check("5. lastChar", lastChar("hello"), "o");
 
@@ -115,14 +113,13 @@ check("5. lastChar", lastChar("hello"), "o");
 function lettersForward(str) {
   // Write your code here
 
-  let result = []
+  let result = [];
 
-  for(let i=0; i<=str.length-1; i++){
-    result.push(str[i])
+  for (let i = 0; i <= str.length - 1; i++) {
+    result.push(str[i]);
   }
 
   return result;
-
 }
 check("6. lettersForward", lettersForward("cat"), ["c", "a", "t"]);
 
@@ -132,10 +129,10 @@ check("6. lettersForward", lettersForward("cat"), ["c", "a", "t"]);
 function lettersBackward(str) {
   // Write your code here
 
-  let result = []
+  let result = [];
 
-  for ( let i=0; i>=str.length; i--  ){
-    result.push(str[i])
+  for (let i = str.length - 1; i >= 0; i--) {
+    result.push(str[i]);
   }
 
   return result;
@@ -147,6 +144,14 @@ check("7. lettersBackward", lettersBackward("cat"), ["t", "a", "c"]);
 // Hint: loop forward but jump by 2 (i = i + 2). Build a string.
 function everyOther(str) {
   // Write your code here
+
+  let result = "";
+
+  for (let i = 0; i < str.length; i=i + 2) {
+   result = result+str[i];
+  }
+
+  return result;
 }
 check("8. everyOther", everyOther("abcdef"), "ace");
 
@@ -159,6 +164,14 @@ check("8. everyOther", everyOther("abcdef"), "ace");
 // Hint: let total = 0; then total = total + arr[i]
 function sumArray(arr) {
   // Write your code here
+
+  let total = 0;
+
+  for(let i = 0; i < arr.length; i++){
+    total = total+arr[i]
+  }
+
+  return total;
 }
 check("9. sumArray", sumArray([1, 2, 3, 4]), 10);
 
