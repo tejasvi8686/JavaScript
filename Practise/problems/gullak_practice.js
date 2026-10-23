@@ -55,7 +55,7 @@ function countBig(arr) {
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 10) {
-      gullak = gullak + 1; 
+      gullak = gullak + 1;
     }
   }
 
@@ -72,19 +72,15 @@ function sumEvens(arr) {
 
   let sumEvens = 0;
 
-  for ( let i = 0; i < arr.length; i++){
+  for (let i = 0; i < arr.length; i++) {
     // i = 0; 0 < 5; 1;
     // i = 1; 1 < 5; 2;
     // i = 2; 2 < 5; 3;
     // i = 3; 3 < 5; 4;
     // i = 4: 4 < 5; 5;
-    // i = 5: 5 < 5; // loop end 
-    if ( arr[i] % 2 === 0 ) {
-
-      sumEvens = sumEvens +  arr[i];
-
-      
-      console.log("i", sumEvens );
+    // i = 5: 5 < 5; // loop end
+    if (arr[i] % 2 === 0) {
+      sumEvens = sumEvens + arr[i];
     }
   }
 
@@ -98,6 +94,15 @@ check("A3. sumEvens", sumEvens([1, 3, 5]), 0);
 // Hint: first find the sum (Problem 9), then divide by arr.length.
 function average(arr) {
   // Write your code here
+
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+    
+    
+  }
+
+  return sum / arr.length
 }
 check("A4. average", average([10, 20, 30]), 20);
 check("A4. average", average([1, 2]), 1.5);
