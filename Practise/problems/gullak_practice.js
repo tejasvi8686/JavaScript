@@ -113,6 +113,16 @@ check("A4. average", average([1, 2]), 1.5);
 //       Why? Try findMax([-5, -2, -9]) with 0 as the start.
 function findMax(arr) {
   // Write your code here
+
+  let max = arr[0];
+
+  for( i = 0; i < arr.length; i++){
+    if(arr[i] > max ){
+       max= arr[i]
+    }
+  }
+
+  return max
 }
 check("A5. findMax", findMax([3, 9, 2, 7]), 9);
 check("A5. findMax", findMax([-5, -2, -9]), -2);
