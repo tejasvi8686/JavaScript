@@ -180,6 +180,15 @@ check("9. sumArray", sumArray([1, 2, 3, 4]), 10);
 // Hint: let result = ""; then result = result + arr[i]  (don't use .join)
 function joinLetters(arr) {
   // Write your code here
+  
+  let result = "";
+
+  for (let i = 0; i < arr.length; i++){
+    result = result+arr[i]
+  }
+
+  return result;
+
 }
 check("10. joinLetters", joinLetters(["h", "i", "!"]), "hi!");
 
@@ -187,6 +196,15 @@ check("10. joinLetters", joinLetters(["h", "i", "!"]), "hi!");
 // reverseString("hello") -> "olleh"
 function reverseString(str) {
   // Write your code here
+  
+  let result = "";
+
+  for (let i = str.length - 1; i >= 0; i--){
+        result = result + str[i];
+  }
+
+  return result;
+
 }
 check("11. reverseString", reverseString("hello"), "olleh");
 check("11. reverseString", reverseString("abc"), "cba");

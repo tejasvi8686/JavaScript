@@ -116,7 +116,7 @@ function findMax(arr) {
 
   let max = arr[0];
 
-  for( i = 0; i < arr.length; i++){
+  for(let i = 0; i < arr.length; i++){
     if(arr[i] > max ){
        max= arr[i]
     }
@@ -136,6 +136,10 @@ check("A5. findMax", findMax([-5, -2, -9]), -2);
 // Hint: a space is " ". Answer is a number, so gullak starts with 0.
 function countSpaces(str) {
   // Write your code here
+  
+  
+
+
 }
 check("B1. countSpaces", countSpaces("I love JS"), 2);
 check("B1. countSpaces", countSpaces("hello"), 0);
