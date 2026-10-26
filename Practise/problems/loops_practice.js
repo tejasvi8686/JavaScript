@@ -214,6 +214,14 @@ check("11. reverseString", reverseString("abc"), "cba");
 // Hint: same idea as Problem 11, but push into an array instead of a string.
 function reverseArray(arr) {
   // Write your code here
+
+  let reverse = [];
+
+  for (let i = arr.length-1; i >= 0; i--){
+    reverse.push(arr[i])
+  }
+
+  return reverse;
 }
 check("12. reverseArray", reverseArray([1, 2, 3]), [3, 2, 1]);
 check("12. reverseArray", reverseArray(["a", "b"]), ["b", "a"]);
@@ -223,6 +231,18 @@ check("12. reverseArray", reverseArray(["a", "b"]), ["b", "a"]);
 // Hint: let count = 0; if str[i] === letter, count = count + 1
 function countLetter(str, letter) {
   // Write your code here
+
+  let count = 0;
+
+  for ( let i = 0; i < str.length; i++){
+    if (str[i] === letter){
+      count = count + 1
+    }
+  }
+
+  return count;
+
+
 }
 check("13. countLetter", countLetter("banana", "a"), 3);
 check("13. countLetter", countLetter("hello", "z"), 0);
