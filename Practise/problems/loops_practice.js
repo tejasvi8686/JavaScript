@@ -256,6 +256,16 @@ check("13. countLetter", countLetter("hello", "z"), 0);
 // Hint: reverse it (Problem 11), then compare with the original.
 function isPalindrome(word) {
   // Write your code here
+
+  let reverse = "";
+
+  for (let i = word.length-1; i >= 0; i--){
+       reverse = reverse+word[i]
+  }
+
+
+  return reverse === word
+
 }
 check("14. isPalindrome", isPalindrome("madam"), true);
 check("14. isPalindrome", isPalindrome("hello"), false);
@@ -266,6 +276,16 @@ check("14. isPalindrome", isPalindrome("hello"), false);
 // then convert back with Number(...).
 function reverseNumber(num) {
   // Write your code here
+
+  let str = String(num)
+  let reverse = ""
+
+  for ( let i = str.length-1; i>=0; i--){
+    reverse = reverse+str[i]
+  }      
+
+  return reverse;
+ 
 }
 check("15. reverseNumber", reverseNumber(1234), 4321);
 check("15. reverseNumber", reverseNumber(500), 5);
