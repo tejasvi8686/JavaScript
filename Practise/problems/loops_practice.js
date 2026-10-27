@@ -284,8 +284,8 @@ function reverseNumber(num) {
     reverse = reverse+str[i]
   }      
 
-  return reverse;
- 
+  return Number(reverse);
+
 }
 check("15. reverseNumber", reverseNumber(1234), 4321);
 check("15. reverseNumber", reverseNumber(500), 5);
@@ -296,6 +296,8 @@ check("15. reverseNumber", reverseNumber(500), 5);
 // Careful: is str.length - 1 always odd?
 function oddIndexBackward(str) {
   // Write your code here
+
+  
 }
 check("16. oddIndexBackward", oddIndexBackward("abcdef"), "fdb");
 check("16. oddIndexBackward", oddIndexBackward("abcde"), "db");
