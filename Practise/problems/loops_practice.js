@@ -297,7 +297,24 @@ check("15. reverseNumber", reverseNumber(500), 5);
 function oddIndexBackward(str) {
   // Write your code here
 
-  
+  let findback = ""
+
+  let start = str.length-1
+
+  if (start % 2 === 0) {
+    start = start - 1
+
+    console.log("start", start);
+    
+  }
+
+  for(let i = start; i >= 0; i= i-2 ){
+       findback = findback+str[i]
+  }
+
+  return findback
+
+
 }
 check("16. oddIndexBackward", oddIndexBackward("abcdef"), "fdb");
 check("16. oddIndexBackward", oddIndexBackward("abcde"), "db");
