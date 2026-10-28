@@ -32,3 +32,23 @@ function countLetter(str, letter) {
 
 
 console.log(countLetter("banana" , "a"));
+
+
+
+function reverseNumber (num) {
+
+  let str = String(num)
+  let result = ""
+
+  for (let i = str.length-1; i >= 0; i-- ) {
+    result = result+str[i]
+  }
+  
+
+  return Number(result)
+
+
+}
+
+console.log(reverseNumber(123456));
+console.log(reverseNumber(500));
