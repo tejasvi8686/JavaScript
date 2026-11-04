@@ -140,6 +140,26 @@ function countSpaces(str) {
   
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
 }
 check("B1. countSpaces", countSpaces("I love JS"), 2);
 check("B1. countSpaces", countSpaces("hello"), 0);
