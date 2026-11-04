@@ -134,7 +134,7 @@ check("A5. findMax", findMax([-5, -2, -9]), -2);
 // B1: Count the spaces in a sentence.
 // countSpaces("I love JS") -> 2
 // Hint: a space is " ". Answer is a number, so gullak starts with 0.
-function countSpaces(str) {
+function countSpaces(str) { 
   // Write your code here
   
   
