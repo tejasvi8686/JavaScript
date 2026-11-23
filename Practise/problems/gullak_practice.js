@@ -98,11 +98,9 @@ function average(arr) {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
     sum = sum + arr[i];
-    
-    
   }
 
-  return sum / arr.length
+  return sum / arr.length;
 }
 check("A4. average", average([10, 20, 30]), 20);
 check("A4. average", average([1, 2]), 1.5);
@@ -116,13 +114,13 @@ function findMax(arr) {
 
   let max = arr[0];
 
-  for(let i = 0; i < arr.length; i++){
-    if(arr[i] > max ){
-       max= arr[i]
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
     }
   }
 
-  return max
+  return max;
 }
 check("A5. findMax", findMax([3, 9, 2, 7]), 9);
 check("A5. findMax", findMax([-5, -2, -9]), -2);
@@ -134,32 +132,17 @@ check("A5. findMax", findMax([-5, -2, -9]), -2);
 // B1: Count the spaces in a sentence.
 // countSpaces("I love JS") -> 2
 // Hint: a space is " ". Answer is a number, so gullak starts with 0.
-function countSpaces(str) { 
+function countSpaces(str) {
   // Write your code here
-  
-  
+  let gullak = 0;
 
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+      gullak = gullak + 1;
+    }
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
+  return gullak;
 }
 check("B1. countSpaces", countSpaces("I love JS"), 2);
 check("B1. countSpaces", countSpaces("hello"), 0);
@@ -169,6 +152,17 @@ check("B1. countSpaces", countSpaces("hello"), 0);
 // Hint: add a letter to the gullak only IF it is not a space (!==).
 function removeSpaces(str) {
   // Write your code here
+
+  let gullak = "";
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== " "){
+      gullak = gullak+str[i];
+    }
+  }
+
+  return gullak
+
 }
 check("B2. removeSpaces", removeSpaces("I love JS"), "IloveJS");
 check("B2. removeSpaces", removeSpaces(" a b "), "ab");
