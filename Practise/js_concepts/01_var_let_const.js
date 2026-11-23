@@ -5,6 +5,10 @@
 // Guess galat ho to koi baat nahi, wahi seekhna hai.
 
 // ---- Helper (don't edit): error aaye to bhi file chalti rahe ----
+
+//var is function-scoped. let and const are block-scoped."
+
+
 function run(name, fn) {
   try {
     fn();
@@ -22,7 +26,7 @@ run("1", () => {
   score = 20;
   console.log("   score =", score);
 });
-// Mera guess:
+// Mera guess: haa badal sakte hai let ki value and score hoga 20 
 
 // =====================================================================
 // Experiment 2: const ki value badal sakte hain?
@@ -33,7 +37,7 @@ run("2", () => {
   pi = 5;
   console.log("   pi =", pi);
 });
-// Mera guess:
+// Mera guess: 5 nahi pront hoga ya 3.14 hoga ya to error beause 2 declare ho raha hai pu 
 
 // =====================================================================
 // Experiment 3: if { } ke andar banaya, bahar dikhega?
@@ -45,7 +49,7 @@ run("3a", () => {
   }
   console.log("   a =", a);
 });
-// Mera guess:
+// Mera guess: nahi if ke andat banya hu bhar nahi dike gaa wo use scope andar he acess hoga bass
 
 console.log("\n--- Experiment 3b: let ---");
 run("3b", () => {
@@ -54,7 +58,7 @@ run("3b", () => {
   }
   console.log("   b =", b);
 });
-// Mera guess:
+// Mera guess: error aye kyu ki let ko ham acess nahi kar sakte kyu ki wo blaock scope hai
 
 // =====================================================================
 // Experiment 4: banane se PEHLE use kiya to?
