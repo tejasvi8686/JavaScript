@@ -156,13 +156,12 @@ function removeSpaces(str) {
   let gullak = "";
 
   for (let i = 0; i < str.length; i++) {
-    if (str[i] !== " "){
-      gullak = gullak+str[i];
+    if (str[i] !== " ") {
+      gullak = gullak + str[i];
     }
   }
 
-  return gullak
-
+  return gullak;
 }
 check("B2. removeSpaces", removeSpaces("I love JS"), "IloveJS");
 check("B2. removeSpaces", removeSpaces(" a b "), "ab");
@@ -174,8 +173,8 @@ function doubleLetters(str) {
 
   let count = "";
 
-  for (let i = 0 ; i< str.length; i++){
-          count = count+str[i]+str[i]
+  for (let i = 0; i < str.length; i++) {
+    count = count + str[i] + str[i];
   }
 
   return count;
@@ -189,17 +188,17 @@ check("B3. doubleLetters", doubleLetters(""), "");
 function joinWithDash(arr) {
   // Write your code here
 
-  let dashjoin = ""
+  let dashjoin = "";
 
   for (let i = 0; i < arr.length; i++) {
-    dashjoin = dashjoin + arr[i]
+    dashjoin = dashjoin + arr[i];
 
     if (i !== arr.length - 1) {
-      dashjoin = dashjoin + "-"
+      dashjoin = dashjoin + "-";
     }
   }
 
-  return dashjoin
+  return dashjoin;
 }
 check("B4. joinWithDash", joinWithDash(["a", "b", "c"]), "a-b-c");
 check("B4. joinWithDash", joinWithDash(["hi"]), "hi");
@@ -215,9 +214,8 @@ function doubleAll(arr) {
 
   let gullak = [];
 
-  for(let i = 0 ; i < arr.length; i++){
-       gullak.push(arr[i]*2)    
-  
+  for (let i = 0; i < arr.length; i++) {
+    gullak.push(arr[i] * 2);
   }
 
   return gullak;
@@ -229,6 +227,17 @@ check("C1. doubleAll", doubleAll([1, 2, 3]), [2, 4, 6]);
 // Is 0 positive? No.
 function onlyPositive(arr) {
   // Write your code here
+
+  let gullak = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      console.log("i", i);
+
+      gullak.push(arr[i]);
+    }
+  }
+  return gullak;
 }
 check("C2. onlyPositive", onlyPositive([-1, 4, 0, -7, 9]), [4, 9]);
 
