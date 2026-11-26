@@ -77,23 +77,17 @@ console.log(removeSpaces2(" a b ")); // ab aana chahiye
 
 // joinWithDash(["a", "b", "c"]) → "a-b-c"
 function joinWithDash2(arr) {
-
-  let dashjoin = ""
+  let dashjoin = "";
 
   for (let i = 0; i < arr.length; i++) {
-   
-
+    dashjoin = dashjoin + arr[i];
     if (i !== arr.length - 1) {
-      dashjoin = dashjoin + "-"
+      dashjoin = dashjoin + "-";
     }
-
- 
-    dashjoin = dashjoin + arr[i]
   }
 
-  return dashjoin
-
+  return dashjoin;
 }
 
-console.log(joinWithDash2(["a", "b", "c"]));  // a-b-c
-console.log(joinWithDash2(["hi"]));           // hi
+console.log(joinWithDash2(["a", "b", "c"])); // a-b-c
+console.log(joinWithDash2(["hi"])); // hi
