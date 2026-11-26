@@ -171,6 +171,14 @@ check("B2. removeSpaces", removeSpaces(" a b "), "ab");
 // doubleLetters("abc") -> "aabbcc"
 function doubleLetters(str) {
   // Write your code here
+
+  let count = "";
+
+  for (let i = 0 ; i< str.length; i++){
+          count = count+str[i]+str[i]
+  }
+
+  return count;
 }
 check("B3. doubleLetters", doubleLetters("abc"), "aabbcc");
 check("B3. doubleLetters", doubleLetters(""), "");
@@ -180,6 +188,18 @@ check("B3. doubleLetters", doubleLetters(""), "");
 // Careful: no dash after the LAST word. How do you know it's the last one?
 function joinWithDash(arr) {
   // Write your code here
+
+  let dashjoin = ""
+
+  for (let i = 0; i < arr.length; i++) {
+    dashjoin = dashjoin + arr[i]
+
+    if (i !== arr.length - 1) {
+      dashjoin = dashjoin + "-"
+    }
+  }
+
+  return dashjoin
 }
 check("B4. joinWithDash", joinWithDash(["a", "b", "c"]), "a-b-c");
 check("B4. joinWithDash", joinWithDash(["hi"]), "hi");
