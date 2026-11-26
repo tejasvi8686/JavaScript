@@ -212,6 +212,15 @@ check("B4. joinWithDash", joinWithDash(["hi"]), "hi");
 // doubleAll([1, 2, 3]) -> [2, 4, 6]
 function doubleAll(arr) {
   // Write your code here
+
+  let gullak = [];
+
+  for(let i = 0 ; i < arr.length; i++){
+       gullak.push(arr[i]*2)    
+  
+  }
+
+  return gullak;
 }
 check("C1. doubleAll", doubleAll([1, 2, 3]), [2, 4, 6]);
 
