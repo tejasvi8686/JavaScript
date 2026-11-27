@@ -1,19 +1,25 @@
 # Interview Plan: 23 Nov 2026 → 31 Jan 2027 (10 hafte) 🎯
 
-**Aim:** React Native developer, product company. 31 Jan tak saare rounds ke liye ready.
+**Aim:** React Native developer, product company, **achhi salary wala level**. 31 Jan tak saare rounds ke liye ready.
 **Time:** roz raat 9:00 – 10:30 (1.5 ghanta), office se 8:30 tak ghar aane ke baad
 
 ---
 
-## Har round mein "ready" ka matlab kya hai?
+## Har round mein "ready" ka matlab kya hai? (achhi salary wala level)
 
 | Round | Ready tab ho jab aap... |
 |---|---|
-| 1. Coding (DSA) | Easy array/string problem **akele, 25 min** mein solve karke English mein samjha sako |
-| 2. JavaScript | Har topic **simple shabdon mein** samjha sako aur code ka output **guess** kar sako |
-| 3. React / React Native | Hooks, performance, navigation, architecture pe **apne projects ke example** ke saath bol sako |
-| 4. Machine coding | Ek chhoti RN screen **2 ghante mein bina AI** ke bana sako |
-| 5. Projects + HR | Intro, job change ka reason, 4 projects aur 3–4 stories **bina atke** bol sako |
+| 1. Coding (DSA) | Easy array/string problem **akele 20 min** mein, aur thoda mushkil (frequency map, two pointers) **35 min** mein. English mein samjhao aur **time complexity** batao |
+| 2. JavaScript | Har topic **simple shabdon mein** samjha sako, output **guess** kar sako, aur `debounce`, `Promise.all`, apna `map` / `filter` **khud likh** sako |
+| 3. React / React Native | Hooks, performance, navigation, architecture pe **apne projects ke example** ke saath bol sako, aur ek **performance problem jo aapne fix ki** wo bata sako |
+| 4. Machine coding | API wali RN screen **90 min mein bina AI**: TypeScript, custom hook, loading / error / empty states, saaf folder structure |
+| 5. Projects + HR | Intro, job change ka reason, 4 projects aur 3–4 stories **bina atke** bol sako. Har project ka ek **impact number** ho. Salary pe confidently baat kar sako |
+
+### Badi salary kyun mushkil hai, aur kaise milegi 💰
+
+- Achhi salary wale interviews mein sirf "code chal gaya" kaafi nahi. **Kyun** aur **kaise** samjhana padta hai.
+- Hike aam taur pe **abhi ki salary** pe depend karta hai. Bada jump lene ka sabse achha tareeka hai **2 offers**: ek offer dikha ke dusre se negotiate karo.
+- Isliye January mein **30+ product companies** mein apply karna hai, sirf 2–3 mein nahi.
 
 ---
 
@@ -100,7 +106,7 @@ Raat ka React Native topic, office ke **asli code** mein dhoondo. Aur apne proje
 - [ ] Coding: sorting basics, two pointers
 - [ ] JS: callbacks → Promises → `async` / `await`
 - [ ] RN: API calls, loading / error state, AsyncStorage
-- [ ] Projects: saare 4 projects ke 30-second answers ek saath bolo
+- [ ] Projects: saare 4 projects ke 30-second answers ek saath bolo. Har project ka ek **impact number** nikalo (users, downloads, crash kam hue, screen kitni fast hui)
 - [ ] Sat: Infinite scroll / pagination with `FlatList`
 
 ### Week 7 (4 – 10 Jan)
@@ -112,7 +118,7 @@ Raat ka React Native topic, office ke **asli code** mein dhoondo. Aur apne proje
 
 ### Week 8 (11 – 17 Jan)
 - [ ] Coding: sliding window basics
-- [ ] JS: debounce aur throttle khud likho
+- [ ] JS: debounce aur throttle khud likho, `Promise.all` khud likho
 - [ ] RN: architecture (bridge, JSI, Fabric, TurboModules, Hermes)
 - [ ] HR: strengths / weakness, salary, notice period
 - [ ] Sat: Timer / stopwatch
@@ -127,9 +133,10 @@ Raat ka React Native topic, office ke **asli code** mein dhoondo. Aur apne proje
 ### Week 10 (25 – 31 Jan)
 - [ ] Coding: mock coding tests
 - [ ] JS: mixed output quiz
-- [ ] RN: mixed mock
+- [ ] RN: testing basics (Jest, React Native Testing Library), push notifications, deep linking, mixed mock
 - [ ] Full mock interviews (saare rounds)
-- [ ] Sat: Mock machine coding
+- [ ] Sat: Mock machine coding (**90 min** ka timer)
+- [ ] Apply: resume update, 30+ product companies ki list
 
 ---
 

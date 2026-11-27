@@ -232,8 +232,6 @@ function onlyPositive(arr) {
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 0) {
-      console.log("i", i);
-
       gullak.push(arr[i]);
     }
   }
@@ -246,6 +244,14 @@ check("C2. onlyPositive", onlyPositive([-1, 4, 0, -7, 9]), [4, 9]);
 // Hint: arr[i] is a word, so arr[i].length is its length.
 function wordLengths(arr) {
   // Write your code here
+
+  let gullak = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    gullak.push(arr[i].length);
+  }
+
+  return gullak;
 }
 check("C3. wordLengths", wordLengths(["hi", "hello", "a"]), [2, 5, 1]);
 
@@ -254,6 +260,17 @@ check("C3. wordLengths", wordLengths(["hi", "hello", "a"]), [2, 5, 1]);
 // Hint: you need TWO gullaks: a number (sum so far) and an array (answer).
 function runningTotal(arr) {
   // Write your code here
+
+  let sum = 0;
+  let result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+
+    result.push(sum);
+  }
+
+  return result;
 }
 check("C4. runningTotal", runningTotal([1, 2, 3, 4]), [1, 3, 6, 10]);
 check("C4. runningTotal", runningTotal([5]), [5]);
