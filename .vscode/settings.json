@@ -3,5 +3,5 @@
   // Cursor Tab: .js files ke liye Cursor ki user settings mein band hai
   // ("cursor.cpp.disabledLanguages"), aur is folder mein yahan bhi.
   "editor.inlineSuggest.enabled": false,
-  "cursor.cpp.disabledLanguages": ["javascript", "markdown"]
+  "cursor.cpp.disabledLanguages": ["javascript", "markdown", "typescript", "typescriptreact"]
 }
